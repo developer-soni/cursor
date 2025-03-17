@@ -80,6 +80,69 @@ h1, p {
     background-color: #4158D0;
 }
 
+/* Weather Widget Styles */
+.weather-widget {
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.weather-widget:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px 0 rgba(31, 38, 135, 0.4);
+}
+
+.weather-widget h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-icon {
+    width: 80px;
+    height: 80px;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
+}
+
+.temp {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 0.5rem 0;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.condition {
+    text-transform: capitalize;
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.location {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.weather-details {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
 .background-shapes {
     position: absolute;
     width: 100%;
@@ -140,5 +203,27 @@ h1, p {
 @media (max-width: 768px) {
     .glass-card {
         padding: 2rem;
+    }
+    
+    .weather-widget {
+        padding: 1rem;
+    }
+    
+    .temp {
+        font-size: 1.5rem;
+    }
+    
+    .condition {
+        font-size: 1rem;
+    }
+    
+    .weather-details {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .weather-details span + span {
+        margin-left: 0 !important;
+        margin-top: 0.5rem;
     }
 }
