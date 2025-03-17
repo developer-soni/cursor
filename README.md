@@ -31,6 +31,13 @@ This project demonstrates a stylish "Website Under Construction" landing page th
    - Connected to GitHub remote repository
    - Pushed changes to GitHub using MCP (Model Control Protocol) tools
 
+4. **Repository Management with GitHub MCP**
+   - Used GitHub MCP tools to pull repository information
+   - Retrieved file contents (README.md, index.html, styles.css) using MCP
+   - Viewed commit history through MCP
+   - Updated documentation based on repository status
+   - Pushed updated README using GitHub MCP tools
+
 ## Technologies Used
 
 - **HTML5**: For the page structure
@@ -40,6 +47,9 @@ This project demonstrates a stylish "Website Under Construction" landing page th
 - **Font Awesome**: For icons
 - **Git & GitHub**: For version control and hosting
 - **MCP Tools**: For GitHub repository management and deployment
+  - Used for pushing files to GitHub
+  - Used for retrieving repository information
+  - Used for viewing commit history
 
 ## Installation
 
@@ -68,4 +78,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE). 
+This project is open source and available under the [MIT License](LICENSE).
