@@ -24,6 +24,9 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center; /* Added to center horizontally */
+    max-width: 100%; /* Ensure container doesn't exceed viewport width */
+    padding: 0 15px; /* Add some padding on small screens */
 }
 
 .glass-card {
@@ -34,6 +37,7 @@ body {
     padding: 3rem;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     transition: all 0.3s ease;
+    width: 100%; /* Ensure the card takes full width of its parent */
 }
 
 .glass-card:hover {
@@ -137,4 +141,4 @@ h1, p {
     .glass-card {
         padding: 2rem;
     }
-} 
+}
